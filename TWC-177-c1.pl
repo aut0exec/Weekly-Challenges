@@ -48,7 +48,6 @@ foreach (3..1600000) {
 		# Find primes to be used later to check palindromes
 		my $i;
 		for ( $i=3; $i < $_; $i++) {
-			#~ if ( ($_ % $i) == 0 or ($_ % 2) == 0) { last; }
 			if ( ($_ % $i) == 0 ) { last; }
 		}
 		if ( $i eq $_ ) { push (@primes, $_); }
