@@ -12,7 +12,7 @@
 use strict;
 use warnings;
 
-my @primes = ('2');
+my @primes = qw( 2 3 4 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 );
 
 sub check_cyclops {
 	
@@ -25,7 +25,7 @@ sub check_cyclops {
 	return 1;
 }
 
-foreach (3..1600000) {
+foreach (101..1600000) {
 	
 	if ($_ == reverse($_)) {
 		# If number ends in these it's not prime
